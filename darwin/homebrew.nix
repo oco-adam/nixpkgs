@@ -41,27 +41,27 @@ in
 
   # Prefer installing application from the Mac App Store
   homebrew.masApps = {
-    "1Password for Safari" = 1569813296;
-    "Accelerate for Safari" = 1459809092;
-    DaisyDisk = 411643860;
-    "Dark Mode for Safari" = 1397180934;
-    Deliveries = 290986013;
-    Fantastical = 975937182;
+    # "1Password for Safari" = 1569813296;
+    # "Accelerate for Safari" = 1459809092;
+    # DaisyDisk = 411643860;
+    # "Dark Mode for Safari" = 1397180934;
+    # Deliveries = 290986013;
+    # Fantastical = 975937182;
     Keynote = 409183694;
-    "Notion Web Clipper" = 1559269364;
+    # "Notion Web Clipper" = 1559269364;
     Numbers = 409203825;
     Pages = 409201541;
-    Patterns = 429449079;
-    "Pixelmator Pro" = 1289583905;
-    "Save to Raindrop.io" = 1549370672;
+    # Patterns = 429449079;
+    # "Pixelmator Pro" = 1289583905;
+    # "Save to Raindrop.io" = 1549370672;
     Slack = 803453959;
-    "Swift Playgrounds" = 1496833156;
-    "Tailscale" = 1475387142;
+    # "Swift Playgrounds" = 1496833156;
+    # "Tailscale" = 1475387142;
     "Things 3" = 904280696;
-    Vimari = 1480933944;
-    "WiFi Explorer" = 494803304;
+    # Vimari = 1480933944;
+    # "WiFi Explorer" = 494803304;
     Xcode = 497799835;
-    "Yubico Authenticator" = 1497506650;
+    # "Yubico Authenticator" = 1497506650;
   };
 
   # If an app isn't available in the Mac App Store, or the version in the App Store has
