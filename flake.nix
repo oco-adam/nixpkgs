@@ -1,5 +1,5 @@
 {
-  description = "Malo’s Nix system configs, and some other useful stuff.";
+  description = "Adam’s Nix system configs, and some other useful stuff.";
 
   inputs = {
     # Package sets
@@ -59,10 +59,10 @@
       };
 
       primaryUserDefaults = {
-        username = "malo";
-        fullName = "Malo Bourgon";
-        email = "mbourgon@gmail.com";
-        nixConfigDirectory = "/Users/malo/.config/nixpkgs";
+        username = "adamharris";
+        fullName = "Adam Harris";
+        email = "adam@omnified.io";
+        nixConfigDirectory = "/Users/adamharris/.config/nixpkgs";
       };
     in
     {
@@ -175,11 +175,11 @@
         };
 
         # My Apple Silicon macOS laptop config
-        MaloBookPro = makeOverridable self.lib.mkDarwinSystem (primaryUserDefaults // {
+        AdamM1Mini = makeOverridable self.lib.mkDarwinSystem (primaryUserDefaults // {
           modules = attrValues self.darwinModules ++ singleton {
             nixpkgs = nixpkgsDefaults;
-            networking.computerName = "Malo’s 💻";
-            networking.hostName = "MaloBookPro";
+            networking.computerName = "Adam’s 💻";
+            networking.hostName = "AdamM1Mini";
             networking.knownNetworkServices = [
               "Wi-Fi"
               "USB 10/100/1000 LAN"
@@ -191,7 +191,7 @@
         });
 
         # Config with small modifications needed/desired for CI with GitHub workflow
-        githubCI = self.darwinConfigurations.MaloBookPro.override {
+        githubCI = self.darwinConfigurations.AdamM1Mini.override {
           system = "x86_64-darwin";
           username = "runner";
           nixConfigDirectory = "/Users/runner/work/nixpkgs/nixpkgs";
@@ -201,8 +201,8 @@
 
       # Config I use with non-NixOS Linux systems (e.g., cloud VMs etc.)
       # Build and activate on new system with:
-      # `nix build .#homeConfigurations.malo.activationPackage && ./result/activate`
-      homeConfigurations.malo = home-manager.lib.homeManagerConfiguration {
+      # `nix build .#homeConfigurations.adamharris.activationPackage && ./result/activate`
+      homeConfigurations.adamharris = home-manager.lib.homeManagerConfiguration {
         pkgs = import inputs.nixpkgs-unstable (nixpkgsDefaults // { system = "x86_64-linux"; });
         modules = attrValues self.homeManagerModules ++ singleton ({ config, ... }: {
           home.username = config.home.user-info.username;
