@@ -45,6 +45,7 @@
       fd # fancy version of `find`
       htop # fancy version of `top`
       hyperfine # benchmarking tool
+      inetutils # e.g. for telnet
       mosh # wrapper for `ssh` that better and not dropping connections
       parallel # runs commands in parallel
       ripgrep # better version of `grep`
