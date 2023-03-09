@@ -4,6 +4,7 @@
     AppleInterfaceStyleSwitchesAutomatically = true;
     AppleMeasurementUnits = "Centimeters";
     AppleMetricUnits = 1;
+    ApplePressAndHoldEnabled = false; 
     AppleShowScrollBars = "Automatic";
     AppleTemperatureUnit = "Celsius";
     InitialKeyRepeat = 15;
