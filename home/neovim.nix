@@ -115,7 +115,7 @@ in
     { use = goyo-vim; }
     { use = indent-blankline-nvim; config = requireConf indent-blankline-nvim; }
     { use = lush-nvim; vscode = true; }
-    { use = nvim-tree; config = requireConf nvim-tree; }
+    # { use = nvim-tree-lua; config = requireConf nvim-tree-lua; }
     {
       use = telescope-nvim;
       config = requireConf telescope-nvim;

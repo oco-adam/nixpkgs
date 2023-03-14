@@ -1,5 +1,5 @@
 -- nvim-tree
-vim.cmd 'packadd nvim-tree/nvim-tree.lua'
+vim.cmd 'packadd nvim-tree-lua'
 
 -- -- Recommended settings from nvim-tree docs
 vim.g.loaded = 1
