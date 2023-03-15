@@ -30,9 +30,12 @@
     prefmanager.inputs.nixpkgs.follows = "nixpkgs-unstable";
     prefmanager.inputs.flake-compat.follows = "flake-compat";
     prefmanager.inputs.flake-utils.follows = "flake-utils";
+
+    devenv.url = "github:cachix/devenv/latest";
+    devenv.inputs.nixpkgs.follows = "nixpkgs-unstable";
   };
 
-  outputs = { self, darwin, home-manager, flake-utils, ... }@inputs:
+  outputs = { self, darwin, devenv, home-manager, flake-utils, ... }@inputs:
     let
       inherit (self.lib) attrValues makeOverridable optionalAttrs singleton;
 
@@ -54,6 +57,11 @@
               ;
           }) // {
             # Add other overlays here if needed.
+            # devenv added by Adam - not really sure if this is correct
+            # I was attempting to add devenv to nixPackages
+            # Even if this is correct then I should probalbly also make this OS-aware,
+            # rather than just assuming everyone is on aarch64-darwin
+            devenv = devenv.packages.aarch64-darwin.devenv;
           }
         );
       };
