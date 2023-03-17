@@ -57,6 +57,10 @@
       xz # extract XZ archives
     ;
 
+    # elixir
+    elixir = pkgs.beam.packages.erlangR25.elixir_1_14;
+    elixir-ls = pkgs.beam.packages.erlang.elixir_ls;
+
     # Dev stuff
     inherit (pkgs)
       cloc # source code line counter
@@ -80,7 +84,7 @@
     inherit (pkgs)
       cachix # adding/managing alternative binary caches hosted by Cachix
       comma # run software from without installing it
-      devenv # this currently doesn't work
+      devenv # tool for managing development environments
       # niv # easy dependency management for nix projects
       nix-output-monitor # get additional information while building packages
       nix-tree # interactively browse dependency graphs of Nix derivations
