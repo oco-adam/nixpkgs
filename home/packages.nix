@@ -47,6 +47,7 @@
       hyperfine # benchmarking tool
       inetutils # e.g. for telnet
       mosh # wrapper for `ssh` that better and not dropping connections
+      ngrok # expose local servers to the internet
       parallel # runs commands in parallel
       ripgrep # better version of `grep`
       tealdeer # rust implementation of `tldr`
