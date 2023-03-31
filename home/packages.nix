@@ -67,11 +67,13 @@
       cloc # source code line counter
       google-cloud-sdk
       # idris2
+      ihp-new # start new IHP (Intergrated Haskell Platform) projects
       jq
       nodejs
       s3cmd
       stack
       typescript
+      yarn
     ;
     inherit (pkgs.haskellPackages)
       cabal-install
