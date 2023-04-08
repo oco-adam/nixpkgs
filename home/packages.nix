@@ -64,6 +64,7 @@
 
     # Dev stuff
     inherit (pkgs)
+      azure-cli
       cloc # source code line counter
       google-cloud-sdk
       # idris2
