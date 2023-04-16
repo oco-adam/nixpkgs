@@ -49,6 +49,7 @@
       mosh # wrapper for `ssh` that better and not dropping connections
       ngrok # expose local servers to the internet
       parallel # runs commands in parallel
+      rclone
       ripgrep # better version of `grep`
       tealdeer # rust implementation of `tldr`
       thefuck
@@ -61,12 +62,16 @@
     # elixir
     elixir = pkgs.beam.packages.erlangR25.elixir_1_14;
     elixir-ls = pkgs.beam.packages.erlang.elixir_ls;
+    paket = pkgs.dotnetPackages.Paket;
 
     # Dev stuff
     inherit (pkgs)
       azure-cli
       cloc # source code line counter
+      cargo # rust packages manager (used for lunarvim)
+      gnumake
       google-cloud-sdk
+      helix # Interesting Kakoune-based modal editor
       # idris2
       ihp-new # start new IHP (Intergrated Haskell Platform) projects
       jq
@@ -83,6 +88,7 @@
       implicit-hie
     ;
     agda = pkgs.agda.withPackages (ps: [ ps.standard-library ]);
+    python = pkgs.python38.withPackages(ps: with ps; [ pip ]);
 
     # Useful nix related tools
     inherit (pkgs)
