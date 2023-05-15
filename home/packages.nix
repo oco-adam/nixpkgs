@@ -38,7 +38,7 @@
       bandwhich # display current network utilization by process
       bottom # fancy version of `top` with ASCII graphs
       browsh # in terminal browser
-      coreutils
+      # coreutils # @Adam - removed because was possibly causing error with flutter build ios
       curl
       du-dust # fancy version of `du`
       exa # fancy version of `ls`
@@ -76,6 +76,8 @@
       ihp-new # start new IHP (Intergrated Haskell Platform) projects
       jq
       nodejs
+      rustc
+      rustfmt
       s3cmd
       stack
       typescript
