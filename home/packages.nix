@@ -40,6 +40,7 @@
       browsh # in terminal browser
       # coreutils # @Adam - removed because was possibly causing error with flutter build ios
       curl
+      docker
       du-dust # fancy version of `du`
       exa # fancy version of `ls`
       fd # fancy version of `find`
